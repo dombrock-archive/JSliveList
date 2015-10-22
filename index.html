@@ -1,0 +1,91 @@
+
+<link href="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css" rel="stylesheet" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<h1>Play with this menu, re-sort it with drag & drop and watch it change live in another broswer window or even another device. Your changes save live to the web for everyone to see. Have fun :)</h1>
+
+<ul id="sortable">  
+    <li id="item-1">Item 1</li>  
+    <li id="item-2">Item 2</li>  
+    <li id="item-3">Item 3</li>  
+    <li id="item-4">Item 4</li>  
+    <li id="item-5">Item 5</li>  
+</ul> 
+
+
+<style>
+  body{
+  margin: 0 auto;
+  padding: 0 auto;
+  background: #1abc9c;
+  font-family: 'Lato',sans-serif;
+}
+
+h1{
+  color: #fff;
+  text-align: center;
+  margin-top: 2em;
+}
+
+ul{
+  list-style: none;
+  margin-top: 2em;
+}
+
+ul li{
+  color: #fff;
+  width: 100%;
+  max-width:100%;
+  min-height:100px;
+  cursor: pointer;
+  overflow:hidden;
+  text-align:center;
+  padding:1vw;
+  border-radius:2vw;
+}
+.block_text{
+  
+}
+#sortable{
+  margin:0 auto;
+  padding:0;
+  width:98vw;
+  max-width:75%;
+}
+ul li#item-1{ background: #e74c3c }
+ul li#item-2{ background: #3498db }
+ul li#item-3{ background: #f39c12 }
+ul li#item-4{ background: #27ae60 }
+ul li#item-5{ background: #9b59b6 }
+
+.ui-sortable-placeholder{
+  border: 1px dotted;
+  padding:30px 1vw;
+  background:black;
+  opacity:0.5;
+}
+
+/*font face*/
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 100;
+  src: local('Lato Hairline'), local('Lato-Hairline'), url(http://themes.googleusercontent.com/static/fonts/lato/v6/boeCNmOCCh-EWFLSfVffDg.woff) format('woff');
+}
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Lato Light'), local('Lato-Light'), url(http://themes.googleusercontent.com/static/fonts/lato/v6/KT3KS9Aol4WfR6Vas8kNcg.woff) format('woff');
+}
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+</style>
+
+<script src="liveList.js"></script>
