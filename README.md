@@ -2,6 +2,10 @@
 Creates a live asynchronous drag and drop-able list that syncs server side to show all clients the same arrangement in real time. 
  
 This is more a proof of concept/ experiment in live data. 
+
+A working demo can be found here:
+
+http://mzero.space/hosted/JSliveList
  
 This project uses jQuery UI's "Sortable" plugin to handle the actually re-arranging of the list. This is very handy because it allows us to do something like:
 
