@@ -11,14 +11,14 @@ liveList.data = {
   "load": ""
 };
 
-liveList.postm = function(save){
+liveList.post = function(save){
   liveList.state["isWriting"] = true;
   $.post( "BACK/write.php", {
     list: save
   },function(data){
       if(data=="database is locked"){
         alert("Server locked, will retry...");
-        liveList.postm(save);
+        liveList.post(save);
       }
       liveList.state["isWriting"] = false;
       return("wrote data");
@@ -61,7 +61,7 @@ $(function() {
     },
     stop: function(event, ui) {
       var save = JSON.stringify($(this).sortable('toArray'));
-      liveList.postm(save);
+      liveList.post(save);
       liveList.state["isDragging"] =false;
     }
   });  
