@@ -1,4 +1,6 @@
 # JSliveList
+## LIVE SYNC IS CURRENTLY BROKEN SOMETHING ABOUT PERMISSIONS
+### THIS CODE IS ANCHIENT ANYWAYS
 Creates a live asynchronous drag and drop-able list that syncs server side to show all clients the same arrangement in real time. 
  
 This is more a proof of concept/ experiment in live data. 
@@ -31,7 +33,7 @@ The code block in which the list is actually generated can be found in the ````l
  
 The variable ````res```` is later used as the HTML content of the ````#sortable```` div. 
 
-##the AJAX
+## the AJAX
 
 The client page will run an AJAX call on the server at a set interval (by default 100ms). This happens as part of the ````liveList.sort()````method. The interval is initiated by a method which at the time of this writing starts on line 84 of ````liveList.js```` and looks like this:
  
